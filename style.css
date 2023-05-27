@@ -71,6 +71,10 @@ nav ul li a {
     cursor: pointer;
 }
 
+.btn:hover, .sub-btn:hover{
+    background-color: #750009;
+}
+
 .sub-btn {
     display: inline-block;
     background-color: #900000;
