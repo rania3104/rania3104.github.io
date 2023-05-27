@@ -92,18 +92,49 @@ nav ul li a {
 /* About Section Styles */
 .about-section {
     background-color: #fff;
-    padding: 40px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+    display: flex;
+    justify-content: center; /* Center aligns the content horizontally */
+    align-items: center; /* Center aligns the content vertically */
+    padding: 40px;
+    padding-right:250px;
+}
+
+.about-section p{
+    max-width: 100%;
+    font-size:18px;
+}
+
+.about-section.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about-section h2 {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 20px;
 }
+
+.about-image {
+    display: flex;
+    align-items: center;
+}
+
 
 /* Programs Section Styles */
 .programs-section {
     background-color: #f5f5f5;
     padding: 40px 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.programs-section.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .program {
@@ -181,3 +212,4 @@ footer {
     cursor: pointer;
     font-size: 16px;
 }
+
