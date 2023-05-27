@@ -14,5 +14,12 @@ applyNowButton.addEventListener("click", handleApplyNowClick);
   
 window.addEventListener('scroll', function() {
   var scrollPosition = window.pageYOffset;
-  document.querySelector('.hero-section').style.backgroundSize = 100 + scrollPosition / 5 + '%';
+  document.querySelector('.hero-section').style.backgroundSize = 100 + scrollPosition / 9 + '%';
+});
+
+window.addEventListener('scroll', function() {
+  var scrollPosition = window.pageYOffset;
+  document.querySelector('.hero-content p').style.fontSize = 150 + scrollPosition / 15 + '%';
+  document.querySelector('.hero-content h1').style.fontSize = 475 + scrollPosition / 5 + '%';
+  document.querySelector('btn').style.fontSize = 100 + scrollPosition / 5 + '%';
 });

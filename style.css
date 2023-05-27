@@ -49,6 +49,10 @@ nav ul li a {
     padding: 250px 0;
 }
 
+.hero-content{
+    transition: font-size 0.5s ease;
+}
+
 .hero-content h1 {
     font-size: 36px;
     margin-bottom: 20px;
