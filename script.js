@@ -12,8 +12,7 @@ function handleApplyNowClick(event) {
 var applyNowButton = document.querySelector(".btn");
 applyNowButton.addEventListener("click", handleApplyNowClick);
   
-// Update the background image size on scroll
 window.addEventListener('scroll', function() {
   var scrollPosition = window.pageYOffset;
-  document.body.style.backgroundSize = 100 + scrollPosition / 5 + '%';
+  document.querySelector('.hero-section').style.backgroundSize = 100 + scrollPosition / 5 + '%';
 });
