@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply Now - Harvard University</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="#">Campus Life</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Apply Now Section -->
+  <section class="apply-now-section">
+    <div class="container">
+      <h2>Apply Now</h2>
+      <p>Thank you for your interest in applying to Harvard University. Please fill out the form below to start your application process.</p>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="program">Program of Interest:</label>
+          <select id="program" name="program" required>
+            <option value="">Select Program</option>
+            <option value="bachelor">Bachelor of Arts</option>
+            <option value="master">Master of Science</option>
+            <option value="doctorate">Doctor of Philosophy</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit Application</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Harvard University. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script> 
+</body>
+</html>
