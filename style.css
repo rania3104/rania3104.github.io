@@ -5,8 +5,12 @@ body, ul {
 
 /* Global Styles */
 body {
+    background-image: url("Harvard.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease;
+    background-position: center top;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
     color: #333;
 }
 
@@ -40,11 +44,8 @@ nav ul li a {
 
 /* Hero Section Styles */
 .hero-section {
-    background-image: url("Harvard.jpg");
-    background-size: cover;
-    background-position: center;
     text-align: center;
-    padding: 100px 0;
+    padding: 250px 0;
 }
 
 .hero-content h1 {
@@ -66,10 +67,21 @@ nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.sub-btn {
+    display: inline-block;
+    background-color: #900000;
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor:pointer;
 }
 
 /* About Section Styles */
-    .about-section {
+.about-section {
     background-color: #fff;
     padding: 40px 0;
 }
@@ -101,3 +113,63 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+/* Apply Now Section */
+.apply-now-section {
+    padding: 40px 0;
+}
+
+.apply-now-section h2 {
+    font-size: 28px;
+    color: #990000;
+    margin-bottom: 20px;
+}
+
+.apply-now-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.apply-now-section form {
+    width: 100%;
+}
+
+.apply-now-section .form-group {
+    margin-bottom: 20px;
+}
+
+.apply-now-section label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.apply-now-section input[type="text"], .apply-now-section input[type="email"], .apply-now-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.apply-now-section select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.apply-now-section textarea {
+    height: 120px;
+}
+
+.apply-now-section .btn {
+    background-color: #990000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
