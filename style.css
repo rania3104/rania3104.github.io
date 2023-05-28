@@ -98,13 +98,15 @@ nav ul li a {
     display: flex;
     justify-content: center; /* Center aligns the content horizontally */
     align-items: center; /* Center aligns the content vertically */
-    padding: 40px;
-    padding-right:250px;
+    padding: 60px;
+    text-align:center;
 }
 
 .about-section p{
     max-width: 100%;
     font-size:18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 .about-section.animate {
@@ -113,13 +115,17 @@ nav ul li a {
 }
 
 .about-section h2 {
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
 .about-image {
     display: flex;
     align-items: center;
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-left:-110px;
 }
 
 
@@ -142,8 +148,9 @@ nav ul li a {
 }
 
 .program h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
+    font-weight: lighter;
 }
 
 /* Footer Styles */
@@ -213,3 +220,34 @@ footer {
     font-size: 16px;
 }
 
+.campus-life-section {
+    overflow: hidden;
+}
+
+.campus-life-section img {
+    width: 100%;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.campus-life-section .animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.campus-life-section .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (adjust as needed) */
+    height: 0;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.campus-life-section .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

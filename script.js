@@ -52,12 +52,15 @@ function animateElementsOnScroll() {
   }
 
   for (var j = 0; j < programsSections.length; j++) {
-    var programsSection = programsSections[j];
-    if (isInViewport(programsSection, 30)) {
-      programsSection.classList.add("animate");
+    var programsSections = programsSections[j];
+    if (isInViewport(programsSections, 30)) {
+      programsSections.classList.add("animate");
     }
   }
+
 }
 
 window.addEventListener("scroll", animateElementsOnScroll);
 animateElementsOnScroll();
+
+//campus life
