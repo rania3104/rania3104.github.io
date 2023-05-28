@@ -221,6 +221,40 @@ footer {
     text-align: center;
 }
 
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Additional styles for Font Awesome icons */
+.fab {
+    font-size: inherit;
+}
+  
+
 /* Apply Now Section */
 .apply-now-section {
     padding: 40px 0;
