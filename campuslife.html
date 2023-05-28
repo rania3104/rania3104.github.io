@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Harvard</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Academics</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="campuslife.html">Campus Life</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="campus-life-section">
+    <div class="container">
+      <h2>Campus Life at Harvard University</h2>
+      <div>
+        <img src="campuslife1.jpg" alt="Campus Life Image 1">
+        <img src="campuslife2.jpg" alt="Campus Life Image 2">
+        <img src="campuslife3.jpg" alt="Campus Life Image 3">
+        <img src="campuslife4.jpg" alt="Campus Life Image 4">
+        <img src="campuslife5.jpg" alt="Campus Life Image 5">
+        <img src="campuslife6.jpg" alt="Campus Life Image 6">
+        <br>
+        <h3>Watch Here to Learn More</h3>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/t5akgsQsOSk" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Harvard University. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function isElementInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function animateOnScroll() {
+      const campusImages = document.querySelectorAll('.campus-life-section img');
+      campusImages.forEach((image) => {
+        if (isElementInViewport(image)) {
+          image.classList.add('animate');
+        }
+      });
+    }
+
+    document.addEventListener('scroll', animateOnScroll);
+    animateOnScroll();
+  </script>
+  <script src="script.js"></script> 
+</body>
+</html>
