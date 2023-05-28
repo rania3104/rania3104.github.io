@@ -58,6 +58,7 @@ function animateElementsOnScroll() {
     }
   }
 
+
 }
 
 window.addEventListener("scroll", animateElementsOnScroll);

@@ -361,3 +361,7 @@ footer {
     left: 10px;
     width: 50px;
 }
+
+ul li{
+    margin-left:20px;
+}
