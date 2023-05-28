@@ -63,4 +63,22 @@ function animateElementsOnScroll() {
 window.addEventListener("scroll", animateElementsOnScroll);
 animateElementsOnScroll();
 
-//campus life
+
+// JavaScript code for scroll-in animation of the logo
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('header');
+  var logo = document.querySelector('.logo');
+  var nav = document.querySelector('nav');
+  var aboutSection = document.querySelector('.about-section');
+  var distanceFromTop = aboutSection.offsetTop - window.innerHeight;
+  
+  if (window.pageYOffset > distanceFromTop) {
+    header.classList.add('scrolled');
+    logo.classList.add('scrolled');
+    nav.querySelector('ul').classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+    logo.classList.remove('scrolled');
+    nav.querySelector('ul').classList.remove('scrolled');
+  }
+});
