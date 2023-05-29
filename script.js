@@ -45,7 +45,7 @@ function animateElementsOnScroll() {
 
   for (var i = 0; i < aboutSections.length; i++) {
     var aboutSection = aboutSections[i];
-    if (isInViewport(aboutSection, 60)) {
+    if (isInViewport(aboutSection, 90)) {
       aboutSection.classList.add("animate");
       aboutImage.classList.add("animate");
     }
