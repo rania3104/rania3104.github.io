@@ -91,23 +91,4 @@ window.addEventListener('scroll', function() {
   }
 });
 
-//read more
-function toggleParagraph() {
-  var program = this.parentNode;
-  var fullView = program.querySelector('.full-view');
-  
-  if (fullView.style.display === 'none') {
-    fullView.style.display = 'block';
-    this.textContent = 'Read Less';
-  } else {
-    fullView.style.display = 'none';
-    this.textContent = 'Read More';
-  }
-}
-
-var readMoreLinks = document.getElementsByClassName('read-more');
-for (var i = 0; i < readMoreLinks.length; i++) {
-  readMoreLinks[i].addEventListener('click', toggleParagraph);
-}
-
 

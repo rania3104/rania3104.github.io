@@ -393,3 +393,8 @@ ul li{
     color:#990000;
     cursor: pointer;
 }
+
+.libraries-section{
+    margin-top:-20px;
+    margin-bottom:20px;
+}
