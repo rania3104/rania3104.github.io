@@ -15,14 +15,13 @@ applyNowButton.addEventListener("click", handleApplyNowClick);
 //for the background image
 window.addEventListener('scroll', function() {
   var scrollPosition = window.pageYOffset;
-  document.querySelector('.hero-section').style.backgroundSize = 100 + scrollPosition / 9 + '%';
+  document.querySelector('.hero-section').style.backgroundSize = 100 + scrollPosition / 15 + '%';
 });
 
 window.addEventListener('scroll', function() {
   var scrollPosition = window.pageYOffset;
-  document.querySelector('.hero-content p').style.fontSize = 150 + scrollPosition / 15 + '%';
-  document.querySelector('.hero-content h1').style.fontSize = 475 + scrollPosition / 5 + '%';
-  document.querySelector('btn').style.fontSize = 100 + scrollPosition / 5 + '%';
+  document.querySelector('.hero-content p').style.fontSize = 150 + scrollPosition / 25 + '%';
+  document.querySelector('.hero-content h1').style.fontSize = 475 + scrollPosition / 15 + '%';
 });
 
 
@@ -54,7 +53,7 @@ function animateElementsOnScroll() {
 
   for (var j = 0; j < programsSections.length; j++) {
     var programsSections = programsSections[j];
-    if (isInViewport(programsSections, 30)) {
+    if (isInViewport(programsSections, 40)) {
       programsSections.classList.add("animate");
     }
   }
