@@ -18,6 +18,15 @@ body {
     padding: 20px;
 }
 
+.admission-section .container{
+    margin-top:-50px;
+    margin-bottom:-20px;
+}
+.programs-section .container{
+    margin-top:-20px;
+    margin-bottom:-20px;
+}
+
 /* Header Styles */
 header {
     background-color: #900000;
