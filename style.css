@@ -365,3 +365,23 @@ footer {
 ul li{
     margin-left:20px;
 }
+
+/*link styles*/
+.academics-section a, .admissions-section a{
+    color:#900000;
+}
+
+.program-section {
+    margin-bottom:-25px;
+}
+
+.program .full-view {
+    display: none;
+}
+.program.show .full-view {
+    display: block;
+}
+.read-more {
+    color:#990000;
+    cursor: pointer;
+}
