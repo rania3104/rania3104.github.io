@@ -41,6 +41,7 @@ function isInViewport(element, offsetPercentage) {
 function animateElementsOnScroll() {
   var aboutSections = document.getElementsByClassName("about-section");
   var programsSections = document.getElementsByClassName("programs-section");
+  var admissionSections = document.getElementsByClassName("admission-section");
   var aboutImage = document.getElementsByClassName("about-image")[0];
 
   for (var i = 0; i < aboutSections.length; i++) {
@@ -58,6 +59,12 @@ function animateElementsOnScroll() {
     }
   }
 
+  for (var j = 0; j < admissionSections.length; j++) {
+    var admissionSections = admissionSections[j];
+    if (isInViewport(admissionSections, 30)) {
+      admissionSections.classList.add("animate");
+    }
+  }
 
 }
 
