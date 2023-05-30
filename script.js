@@ -1,8 +1,6 @@
 // Function to handle click events on the "Apply Now" button
 function handleApplyNowClick(event) {
   event.preventDefault(); // Prevent the default action of the event (in this case, preventing the form submission)
-  // Add your logic here for handling the click event
-  // For example, you can redirect the user to the application page
   window.location.href = "application.html"; // Redirect the user to the application page
 }
 
