@@ -49,30 +49,35 @@ nav ul {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-left: 170px;
-    transition: all 0.5s ease-in-out;
-    font-size:16px;
+    margin-left: 170px; /* Left margin of the navigation list */
+    transition: all 0.5s ease-in-out; /* Transition effect for smooth changes */
+    font-size:16px; /* Font size for the navigation items */
 }
+
 nav ul li a.active{
-    font-weight: bold;
+    font-weight: bold; /* Bold font weight for active navigation item */
 }
 
 nav ul.scrolled {
-    margin-left: 60px;
+    margin-left: 60px; /* Adjusted left margin of the navigation list when scrolled */
 }
 
 nav ul li {
-    display: flex;
-    margin: 0 10px;
+    display: flex; /* Display navigation items as a flex container */
+    margin: 0 10px; /* Margin around each navigation item */
 }
 
 nav ul li a {
-    padding: 20px;
-    text-decoration: none;
-    color:#fff;
-    position: relative;
+    padding: 20px; /* Padding around the navigation links */
+    text-decoration: none; /* Remove underline from navigation links */
+    color:#fff; /* Text color of the navigation links */
+    position: relative; /* Set the position to relative for positioning */
 }
 
+
+/* Additional styles for the header when scrolled */
+
+/* Adds a horizontal line at the bottom of each link in the navigation menu */
 nav ul li a::after {
     content: '';
     position: absolute;
@@ -81,22 +86,25 @@ nav ul li a::after {
     width: 100%;
     height: 3px;
     background-color: #fff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
+    transform: scaleX(0); /* Initially hides the line by scaling it to zero */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect */
 }
 
+/* Styles for the hover and active states of the links in the navigation menu */
 header nav ul li a:hover::after, header nav ul li a.active::after {
-    transform: scaleX(0.4);
+    transform: scaleX(0.4); /* Scales the line to a width of 40% on hover or when active */
     bottom: 10px;
-    height: 2px;
+    height: 2px; /* Reduces the height of the line on hover or when active */
 }
 
+/* Styles for the header navigation */
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
   
+/* Styles for the apply button */
 .apply-button {
     padding: 15px 20px;
     background-color:#333;
@@ -105,10 +113,13 @@ header nav {
     border-radius: 40px;
 }
 
+/* Styles for the hover state of the apply button */
 .apply-button:hover{
-    background-color:#535353;
-    transition:ease-in-out 0.5s;
+    background-color:#535353; /* Changes the background color on hover */
+    transition:ease-in-out 0.5s; /* Adds a smooth transition effect */
 }
+
+
 /* Hero Section Styles */
 .hero-section {
     background-image: url("Harvard.jpg");
