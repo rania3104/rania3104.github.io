@@ -38,21 +38,21 @@ header {
     transition: all 0.5s ease-in-out; /* Applies a smooth transition effect to all CSS properties of the header, with a duration of 0.5 seconds and an ease-in-out timing function */
 }
 
-
 /* Additional styles for the header when scrolled */
 header.scrolled {
     height: 60px; /* Height of the header when scrolled */
 }
 
 nav ul {
-    list-style-type: none;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-left: 170px; /* Left margin of the navigation list */
-    transition: all 0.5s ease-in-out; /* Transition effect for smooth changes */
-    font-size:16px; /* Font size for the navigation items */
+    list-style-type: none; /* Removes the default bullet points from the list */
+    text-align: center; /* Centers the text within the list horizontally */
+    display: flex; /* Specifies that the list should be treated as a flex container */
+    justify-content: center; /* Centers the flex items horizontally within the container */
+    margin-left: 170px; /* Left margin of the navigation list (adjust as needed) */
+    transition: all 0.5s ease-in-out; /* Transition effect for smooth changes with a duration of 0.5 seconds */
+    font-size:16px; /* Font size for the navigation items (adjust as needed) */
 }
+
 
 nav ul li a.active{
     font-weight: bold; /* Bold font weight for active navigation item */
@@ -74,18 +74,15 @@ nav ul li a {
     position: relative; /* Set the position to relative for positioning */
 }
 
-
-/* Additional styles for the header when scrolled */
-
 /* Adds a horizontal line at the bottom of each link in the navigation menu */
 nav ul li a::after {
-    content: '';
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Positions the pseudo-element absolutely */
+    bottom: 10px; /* Sets the distance of the pseudo-element from the bottom */
+    left: 0; /* Aligns the pseudo-element to the left */
+    width: 100%; /* Sets the width of the pseudo-element to 100% */
+    height: 3px; /* Sets the height of the pseudo-element to 3 pixels */
+    background-color: #fff; /* Sets the background color of the pseudo-element to white */
     transform: scaleX(0); /* Initially hides the line by scaling it to zero */
     transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect */
 }
@@ -93,24 +90,24 @@ nav ul li a::after {
 /* Styles for the hover and active states of the links in the navigation menu */
 header nav ul li a:hover::after, header nav ul li a.active::after {
     transform: scaleX(0.4); /* Scales the line to a width of 40% on hover or when active */
-    bottom: 10px;
+    bottom: 10px; /* Keeps the distance of the pseudo-element from the bottom */
     height: 2px; /* Reduces the height of the line on hover or when active */
 }
 
 /* Styles for the header navigation */
 header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Displays the navigation as a flex container */
+    justify-content: space-between; /* Distributes the content evenly along the horizontal axis */
+    align-items: center; /* Aligns the items vertically at the center */
 }
   
 /* Styles for the apply button */
 .apply-button {
-    padding: 15px 20px;
-    background-color:#333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 40px;
+    padding: 15px 20px; /* Adds padding inside the apply button */
+    background-color: #333; /* Sets the background color of the apply button to dark gray */
+    color: #fff; /* Sets the text color of the apply button to white */
+    text-decoration: none; /* Removes the underline from the apply button */
+    border-radius: 40px; /* Rounds the corners of the apply button */
 }
 
 /* Styles for the hover state of the apply button */
@@ -119,320 +116,343 @@ header nav {
     transition:ease-in-out 0.5s; /* Adds a smooth transition effect */
 }
 
-
 /* Hero Section Styles */
+
+/* Styles for the hero section container */
 .hero-section {
-    background-image: url("Harvard.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    transition: background-size 0.5s ease;
-    background-position: center top;
-    text-align: center;
-    padding: 250px 0;
+    background-image: url("Harvard.jpg"); /* Sets the background image to "Harvard.jpg" */
+    background-size: 100%; /* Sets the background image size to cover the entire container */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    transition: background-size 0.5s ease; /* Adds a transition effect to the background image size change */
+    background-position: center top; /* Sets the background image position to the center top */
+    text-align: center; /* Centers the content horizontally within the container */
+    padding: 250px 0; /* Adds 250 pixels of padding to the top and bottom of the container */
 }
 
+/* Styles for the hero content container */
 .hero-content{
-    transition: font-size 0.5s ease;
+    transition: font-size 0.5s ease; /* Adds a transition effect to the font size change */
 }
 
+/* Styles for the heading within the hero content */
 .hero-content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color:white;
-    text-shadow: 2px 2px 4px rgba(1, 1, 1,1); 
-
+    font-size: 36px; /* Sets the font size to 36 pixels */
+    margin-bottom: 20px; /* Adds 20 pixels of margin at the bottom */
+    color:white; /* Sets the text color to white */
+    text-shadow: 2px 2px 4px rgba(1, 1, 1,1); /* Adds a text shadow with a horizontal offset of 2px, vertical offset of 2px, blur radius of 4px, and opacity of 1 */
 }
 
+/* Styles for the paragraph within the hero content */
 .hero-content p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color:white;
-    text-shadow: 2px 2px 4px rgba(1, 1, 1, 1);
-
+    font-size: 18px; /* Sets the font size to 18 pixels */
+    margin-bottom: 30px; /* Adds 30 pixels of margin at the bottom */
+    color:white; /* Sets the text color to white */
+    text-shadow: 2px 2px 4px rgba(1, 1, 1, 1); /* Adds a text shadow with a horizontal offset of 2px, vertical offset of 2px, blur radius of 4px, and opacity of 1 */
 }
 
+/* Styles for the .btn class */
 .btn {
-    display: inline-block;
-    background-color: #900000;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 4px;
-    cursor: pointer;
+    display: inline-block; /* Displays the element as an inline block */
+    background-color: #900000; /* Sets the background color to a dark red */
+    color: #fff; /* Sets the text color to white */
+    padding: 10px 20px; /* Adds 10 pixels of padding to the top and bottom, and 20 pixels to the left and right */
+    text-decoration: none; /* Removes any text decoration */
+    border-radius: 4px; /* Adds rounded corners with a radius of 4 pixels */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the element */
 }
 
-.btn:hover, .sub-btn:hover{
-    background-color: #750009;
-    transition:ease-in-out 0.5s;
+/* Styles for the .btn class when hovered, and .sub-btn class when hovered */
+.btn:hover, .sub-btn:hover {
+    background-color: #750009; /* Changes the background color to a darker shade of red when hovered */
+    transition: ease-in-out 0.5s; /* Adds a smooth transition effect with a duration of 0.5 seconds */
 }
 
+/* Styles for the .sub-btn class */
 .sub-btn {
-    display: inline-block;
-    background-color: #900000;
-    color: #fff;
-    padding: 10px 10px;
-    text-decoration: none;
-    border-radius: 4px;
-    cursor:pointer;
+    display: inline-block; /* Displays the element as an inline block */
+    background-color: #900000; /* Sets the background color to a dark red */
+    color: #fff; /* Sets the text color to white */
+    padding: 10px 10px; /* Adds 10 pixels of padding to the top and bottom, and 10 pixels to the left and right */
+    text-decoration: none; /* Removes any text decoration */
+    border-radius: 4px; /* Adds rounded corners with a radius of 4 pixels */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the element */
 }
 
-/* About Section Styles */
+/* Styles for the About Section */
 .about-section {
-    background-color: #fff;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease, transform 1s ease;
-    display: flex;
-    justify-content: center; /* Center aligns the content horizontally */
-    align-items: center; /* Center aligns the content vertically */
-    padding: 60px;
-    text-align:center;
+    background-color: #fff; /* Sets the background color to white */
+    opacity: 0; /* Sets the opacity of the element to 0 (completely transparent) */
+    transform: translateY(30px); /* Translates (moves) the element 30 pixels down on the y-axis */
+    transition: opacity 1s ease, transform 1s ease; /* Adds a smooth transition effect to the opacity and transform properties with a duration of 1 second */
+    display: flex; /* Displays the element as a flex container */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    padding: 60px; /* Adds 60 pixels of padding to the element */
+    text-align: center; /* Centers the text horizontally */
 }
 
-.about-section p{
-    max-width: 100%;
-    font-size:18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+/* Styles for paragraphs within the "about-section" class */
+.about-section p {
+    max-width: 100%; /* Set the maximum width of paragraphs to 100% of their container */
+    font-size: 18px; /* Set the font size of paragraphs to 18 pixels */
+    line-height: 1.5; /* Set the line height of paragraphs to 1.5 times their font size */
+    margin-bottom: 20px; /* Set a margin of 20 pixels at the bottom of paragraphs */
 }
 
+/* Styles for the "animate" class within the "about-section" class */
 .about-section.animate {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Set the opacity of elements with both classes to 1 (fully opaque) */
+    transform: translateY(0); /* Set the vertical translation to 0, effectively keeping the element in its original position */
 }
 
+/* Styles for heading 2 tags within the "about-section" class */
 .about-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 32px; /* Set the font size of heading 2 tags to 32 pixels */
+    margin-bottom: 20px; /* Set a margin of 20 pixels at the bottom of heading 2 tags */
 }
 
+/* Styles for elements with the "about-image" class */
 .about-image {
-    display: flex;
-    align-items: center;
-    max-width: 100%;
-    height: auto;
-    margin-top: 30px;
-    margin-left:-110px;
+    display: flex; /* Set the display property to flex, enabling flexible layout for child elements */
+    align-items: center; /* Align child elements vertically in the center */
+    max-width: 100%; /* Set the maximum width of elements to 100% of their container */
+    height: auto; /* Automatically adjust the height of elements to maintain aspect ratio */
+    margin-top: 30px; /* Set a margin of 30 pixels at the top of elements */
+    margin-left: -110px; /* Set a negative margin of 110 pixels on the left side of elements, effectively shifting them to the left */
 }
 
-
-/* Programs Section Styles */
-.programs-section, .admission-section{
-    background-color: #f5f5f5;
-    padding: 40px 0;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease, transform 1s ease;
+/* Styles for elements with either the "programs-section" or "admission-section" class */
+.programs-section, .admission-section {
+    background-color: #f5f5f5; /* Set the background color to #f5f5f5 (light gray) */
+    padding: 40px 0; /* Set the padding to 40 pixels at the top and bottom, and 0 pixels on the left and right */
+    opacity: 0; /* Set the initial opacity of elements to 0 (fully transparent) */
+    transform: translateY(30px); /* Set the initial vertical translation to 30 pixels, effectively moving the elements downwards */
+    transition: opacity 1s ease, transform 1s ease; /* Apply a transition effect to the opacity and transform properties with a duration of 1 second and an easing function */
 }
 
-.programs-section.animate, .admission-section.animate {
-    opacity: 1;
-    transform: translateY(0);
+/* This rule selects elements with class 'programs-section' or 'admission-section'
+   and applies animation properties to them */
+   .programs-section.animate, .admission-section.animate {
+    opacity: 1; /* Sets the opacity of the element to 1 (fully visible) */
+    transform: translateY(0); /* Resets the vertical translation to 0 */
 }
 
-#program{
-    min-width:980px;
+#program {
+    min-width: 980px; /* Sets the minimum width of the element to 980 pixels */
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    background-color: #333; /* Sets the background color of the footer to dark gray */
+    color: #fff; /* Sets the text color of the footer to white */
+    padding: 10px; /* Adds 10 pixels of padding to all sides of the footer */
+    text-align: center; /* Centers the text horizontally within the footer */
 }
 
 .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex; /* Displays the element as a flex container */
+    flex-wrap: wrap; /* Allows flex items to wrap to the next line if necessary */
+    justify-content: space-between; /* Distributes flex items evenly with equal space between them */
+    align-items: center; /* Centers flex items vertically within the container */
+    max-width: 1200px; /* Sets the maximum width of the container to 1200 pixels */
+    margin: 0 auto; /* Centers the container horizontally within its parent element */
+    padding: 20px; /* Adds 20 pixels of padding to all sides of the container */
 }
+
 .social-media {
-    display: flex;
-    gap: 10px;
+    display: flex; /* Displays the element as a flex container */
+    gap: 10px; /* Sets the gap between flex items to 10 pixels */
 }
 
 .social-link {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
+    color: #fff; /* Sets the text color of social links to white */
+    font-size: 20px; /* Sets the font size of social links to 20 pixels */
+    text-decoration: none; /* Removes any underline or decoration from the links */
 }
 
 .contact-info {
-    margin-top: 10px;
+    margin-top: 10px; /* Sets the top margin of elements with the class "contact-info" to 10 pixels */
 }
 
 .contact-info p {
-    margin: 5px 0;
+    margin: 5px 0; /* Sets the top and bottom margins of <p> elements inside elements with the class "contact-info" to 5 pixels, and sets the left and right margins to 0 */
 }
 
 /* Additional styles for Font Awesome icons */
 .fab {
-    font-size: inherit;
+    font-size: inherit; /* Makes elements with the class "fab" inherit the font size of their parent elements */
 }
   
 
 /* Apply Now Section */
 .apply-now-section {
-    padding: 40px 0;
+    padding: 40px 0; /* Sets the top and bottom padding of elements with the class "apply-now-section" to 40 pixels, and sets the left and right padding to 0 */
 }
 
 .apply-now-section h2 {
-    font-size: 28px;
-    color: #990000;
-    margin-bottom: 20px;
+    font-size: 28px; /* Sets the font size of <h2> elements inside elements with the class "apply-now-section" to 28 pixels */
+    color: #990000; /* Sets the text color of <h2> elements inside elements with the class "apply-now-section" to a dark red (#990000) */
+    margin-bottom: 20px; /* Sets the bottom margin of <h2> elements inside elements with the class "apply-now-section" to 20 pixels */
 }
 
 .apply-now-section p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 30px;
+    font-size: 16px; /* Sets the font size of <p> elements inside elements with the class "apply-now-section" to 16 pixels */
+    line-height: 1.5; /* Sets the line height of <p> elements inside elements with the class "apply-now-section" to 1.5 times their font size */
+    margin-bottom: 30px; /* Sets the bottom margin of <p> elements inside elements with the class "apply-now-section" to 30 pixels */
 }
 
 .apply-now-section form {
-    width: 100%;
+    width: 100%; /* Sets the width of <form> elements inside elements with the class "apply-now-section" to 100% of their parent container */
 }
 
 .apply-now-section .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Sets the bottom margin of elements with the class "form-group" inside elements with the class "apply-now-section" to 20 pixels */
 }
 
 .apply-now-section label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
+    font-weight: bold; /* Sets the font weight to bold for labels within .apply-now-section */
+    display: block; /* Displays the labels as blocks, causing them to appear on separate lines */
+    margin-bottom: 5px; /* Adds a 5px margin at the bottom of the labels */
 }
 
 .apply-now-section input[type="text"], .apply-now-section input[type="email"], .apply-now-section textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%; /* Sets the width of the input[type="text"], input[type="email"], and textarea elements to 100% of their container */
+    padding: 10px; /* Adds 10px of padding to the inside of the input[type="text"], input[type="email"], and textarea elements */
+    border: 1px solid #ccc; /* Adds a 1px solid border with the color #ccc (light gray) to the input[type="text"], input[type="email"], and textarea elements */
+    border-radius: 4px; /* Applies a 4px border radius to the input[type="text"], input[type="email"], and textarea elements, giving them rounded corners */
 }
 
 .apply-now-section select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    width: 100%; /* Sets the width of the select element to 100% of its container */
+    padding: 10px; /* Adds 10px of padding to the inside of the select element */
+    border: 1px solid #ccc; /* Adds a 1px solid border with the color #ccc (light gray) to the select element */
+    border-radius: 4px; /* Applies a 4px border radius to the select element, giving it rounded corners */
 }
 
 .apply-now-section textarea {
-    height: 120px;
+    height: 120px; /* Sets the height of the textarea element to 120 pixels */
 }
 
 .apply-now-section .btn {
-    background-color: #990000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+    background-color: #990000; /* Sets the background color of elements with the class .btn within .apply-now-section to #990000 (dark red) */
+    color: #fff; /* Sets the text color of elements with the class .btn within .apply-now-section to #fff (white) */
+    border: none; /* Removes the border from elements with the class .btn within .apply-now-section */
+    padding: 10px 20px; /* Adds 10px of padding to the top and bottom, and 20px of padding to the left and right of elements with the class .btn within .apply-now-section */
+    border-radius: 4px; /* Applies a 4px border radius to elements with the class .btn within .apply-now-section, giving them rounded corners */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over elements with the class .btn within .apply-now-section */
+    font-size: 16px; /* Sets the font size of elements with the class .btn within .apply-now-section to 16 pixels */
 }
 
 .campus-life-section {
-    overflow: hidden;
+    overflow: hidden; /* Hides any content that overflows the .campus-life-section container */
 }
 
+/* Styles for the campus life section images */
 .campus-life-section img {
-    width: 100%;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    width: 100%; /* Sets the width of the image to 100% of its parent container */
+    opacity: 0; /* Sets the initial opacity of the image to 0 (invisible) */
+    transform: translateY(100px); /* Translates the image vertically down by 100 pixels */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Adds a transition effect to the opacity and transform properties with a duration of 0.8 seconds and ease-out timing function */
 }
 
+/* Styles for the campus life section when animated */
 .campus-life-section .animate {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 1; /* Sets the opacity of the element to 1 (visible) when it has the 'animate' class applied */
+    transform: translateY(0); /* Resets the vertical translation of the element to 0 when it has the 'animate' class applied */
 }
 
+/* Styles for the video container within the campus life section */
 .campus-life-section .video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (adjust as needed) */
-    height: 0;
-    overflow: hidden;
-    margin-top: 20px;
+    position: relative; /* Sets the positioning context for the video container to its parent */
+    padding-bottom: 56.25%; /* Sets the aspect ratio of the video container to 16:9 (adjust as needed) by using a percentage value for the padding-bottom property */
+    height: 0; /* Sets the initial height of the video container to 0 (invisible) */
+    overflow: hidden; /* Hides any content that overflows the video container */
+    margin-top: 20px; /* Adds a top margin of 20 pixels to the video container */
 }
 
+/* Styles for the iframe element within the video container */
 .campus-life-section .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: absolute; /* Positions the iframe absolutely within the video container */
+    top: 0; /* Positions the top edge of the iframe at the top of the video container */
+    left: 0; /* Positions the left edge of the iframe at the left of the video container */
+    width: 100%; /* Sets the width of the iframe to 100% of its parent container */
+    height: 100%; /* Sets the height of the iframe to 100% of its parent container */
 }
 
-/* Add styles for the logo */
+/* Styles for the logo */
 .logo {
-    position: fixed;
-    top:9px;
-    left: 20px;
-    width: 140px;
-    transition: all 0.5s ease-in-out;
+    position: fixed; /* Positions the logo element fixed within the viewport */
+    top: 9px; /* Positions the top edge of the logo 9 pixels from the top of the viewport */
+    left: 20px; /* Positions the left edge of the logo 20 pixels from the left of the viewport */
+    width: 140px; /* Sets the width of the logo to 140 pixels */
+    transition: all 0.5s ease-in-out; /* Adds a transition effect to all properties of the logo element with a duration of 0.5 seconds and ease-in-out timing function */
 }
+
 
 /* Additional styles for the logo when scrolled */
 .logo.scrolled {
-    top: 10px;
-    left: 10px;
-    width: 50px;
+    top: 10px; /* Sets the top position of the logo to 10 pixels */
+    left: 10px; /* Sets the left position of the logo to 10 pixels */
+    width: 50px; /* Sets the width of the logo to 50 pixels */
 }
 
 ul li{
-    margin-left:20px;
+    margin-left:20px; /* Adds a left margin of 20 pixels to each list item within an unordered list */
 }
 
-/*link styles*/
+/* Link styles for the academics and admissions sections */
 .academics-section a, .admissions-section a{
-    color:#900000;
+    color:#900000; /* Sets the color of the links in the academics and admissions sections to a dark red (#900000) */
 }
 
 .program-section {
-    margin-bottom:-25px;
+    margin-bottom:-25px; /* Adds a negative bottom margin of 25 pixels to the program section, which may overlap content below it */
 }
 
 .program .full-view {
-    display: none;
+    display: none; /* Hides the elements with the class "full-view" within elements with the class "program" */
 }
+
 .program.show .full-view {
-    display: block;
+    display: block; /* Displays the elements with the class "full-view" within elements with the classes "program" and "show" */
 }
+
 .read-more {
-    color:#990000;
-    cursor: pointer;
+    color:#990000; /* Sets the color of elements with the class "read-more" to a darker shade of red (#990000) */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over elements with the class "read-more" */
 }
 
 .libraries-section{
-    margin-top:-20px;
-    margin-bottom:20px;
+    margin-top:-20px; /* Adds a negative top margin of 20 pixels to the libraries section, which may overlap content above it */
+    margin-bottom:20px; /* Adds a bottom margin of 20 pixels to the libraries section */
 }
+
 
 /* Back to Top Button Styles */
+
+/* Set the positioning of the back-to-top button */
 .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    width: 40px;
-    height: 40px;
-    background-color: #900000;
-    color: #fff;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    z-index: 9999;
+    position: fixed; /* Fix the position of the button */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right side of the viewport */
+    display: none; /* Initially hide the button */
+    width: 40px; /* Set the width of the button */
+    height: 40px; /* Set the height of the button */
+    background-color: #900000; /* Set the background color of the button */
+    color: #fff; /* Set the text color of the button */
+    border-radius: 50%; /* Make the button circular by setting border radius to 50% */
+    text-align: center; /* Center the text inside the button */
+    line-height: 40px; /* Set the line height to vertically center the text */
+    font-size: 20px; /* Set the font size of the text */
+    z-index: 9999; /* Set a high z-index to ensure the button appears on top of other elements */
 }
 
+/* Styles for when the mouse hovers over the button */
 .back-to-top:hover {
-    background-color: #750009;
+    background-color: #750009; /* Change the background color when hovering */
 }
 
+/* Styles for when the button is shown */
 .back-to-top.show {
-    display: block;
+    display: block; /* Show the button when the show class is applied */
 }
