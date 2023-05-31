@@ -78,7 +78,7 @@ window.addEventListener('scroll', function() {
   var aboutSection = document.querySelector('.about-section'); // Get the element with class "about-section"
   var distanceFromTop = aboutSection.offsetTop - window.innerHeight; // Calculate the distance from the top of the about section
 
-  if (window.pageYOffset > distanceFromTop) { // Check if the scroll position is below the distance from the top of the about section
+  if (window.pageYOffset > distanceFromTop) { // Checks if the scroll position is below the distance from the top of the about section
     header.classList.add('scrolled'); // Add the "scrolled" class to the header to trigger CSS changes
     logo.classList.add('scrolled'); // Add the "scrolled" class to the logo to trigger CSS changes
     nav.querySelector('ul').classList.add('scrolled'); // Add the "scrolled" class to the navigation's unordered list to trigger CSS changes
